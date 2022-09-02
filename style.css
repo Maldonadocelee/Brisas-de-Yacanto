@@ -543,10 +543,50 @@
         padding: 0px 65px 0px 0px;
     } 
 }
-/*section reseñas*/
-
-
-
+/*section reviews*/
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-reviews {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 254, 244);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10%;
+}
+.card-icon {
+    display: block;
+    justify-items: left;
+    width: 38px;
+    padding: 5px;
+}
+.card-text {
+    text-align: justify;
+    
+}
+.card-firma {
+    display: grid;
+    grid-template-areas: 
+    "card-photo card-username";
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+.card-photo {
+    grid-area: card-photo;
+    width: 40%;
+    
+}
+.card-username {
+    grid-area: card-username;
+    font-size: 18px;
+    margin: 0px;
+}
 
 /*comienza el FOOTER*/
 
