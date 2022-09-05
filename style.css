@@ -277,7 +277,7 @@
 .presentation-us .img-about-us {
     margin: 10px 0px ;
     height: 100% ;
-    width: 100%;
+    width: 290px;
     padding: 0px 20px;
 
 }
@@ -309,7 +309,7 @@
         background: rgba(237, 227, 41, 0.992);
     }
     .presentation-us .img-about-us {
-        width: 100%;
+        width: 350px;
         border: #000000;
         border-style: dotted;
         padding: 0px;
@@ -355,7 +355,7 @@
 @media screen and (min-width: 1200px) {
     .presentation-us .img-about-us {
         height: 100%;
-        width: 490px;
+        width: 395px;
         border: #000000;
         border-style: dotted;
         padding: 0px;
@@ -371,7 +371,7 @@
     }
     .presentation-us .img-about-us {
         height: 100%;
-        width: 590px;
+        width: 490px;
         border: #000000;
         border-style: dotted;
         padding: 0px;
@@ -543,8 +543,83 @@
         padding: 0px 65px 0px 0px;
     } 
 }
-/*section reseñas*/
-
+/*section reviews*/
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-reviews {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 254, 244);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10%;
+}
+.card-icon {
+    display: block;
+    justify-items: left;
+    width: 38px;
+    padding: 5px;
+}
+.card-text {
+    text-align: justify;
+    font-size: 14px;
+    
+}
+.card-firma {
+    display: grid;
+    grid-template-areas: 
+    "card-photo card-username";
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-photo {
+    grid-area: card-photo;
+    width: 60%;
+    
+    
+}
+.card-username {
+    grid-area: card-username;
+    font-size: 14px;
+    margin: 0px;
+    
+}
+@media screen and (min-width: 375px) {
+    .card-text {
+        text-align: justify;
+        font-size: 17px;
+    }
+    .card-reviews {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 254, 244);
+        
+        padding: 25px;
+        border-radius: 10%;
+        max-width: 441px;
+    }
+}
+@media screen and (min-width:768px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        margin-bottom: 35px;
+    }
+    
+}
+@media screen and (min-width:1900px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        margin-bottom: 65px;
+    }
+}
 
 
 
