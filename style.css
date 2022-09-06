@@ -625,33 +625,19 @@
 
 /*comienza el FOOTER*/
 
-#footer {
-    display: grid;
-    grid-template-areas: 
-    "website follow-us follow-us follow-us"
-    "website botton-networks botton-networks botton-networks" ;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    background-color: rgba(237, 227, 41, 0.992);
-    height: 75px;
-    align-content: space-between;
-
-}
 
 .follow-us {
-    grid-area: follow-us;
-    align-items:center;
+    align-items: center;
 }
+
 .title-networks{
-    margin: 5px 0px;
-    text-align: center;
-    padding-left: 30px;
+    margin-top: 10px;
     font-size: 15px;
+    text-align: end;
+    padding-right: 10px;
+    margin-bottom: 0px;
 }
-.botton-networks{
-    grid-area:  botton-networks;
-    
-}
+
 a .network {
     width: 16px;
 }
@@ -660,6 +646,7 @@ a .network {
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
+    padding: 0px;
 }
 
 
@@ -668,9 +655,10 @@ a .network {
     align-self: center;
 }
 .text-website {
-    font-size: 10px;
+    font-size: 8px;
     text-align:start;
-    padding-left: 15px;
+    margin: 0px;
+   
     
 }
 @media screen and (min-width: 575px){
@@ -680,10 +668,10 @@ a .network {
         padding-left: 12px;
     }
     .title-networks{
-        margin: 5px 0px;
-        text-align: center;
-        padding-left: 30px;
+        margin-top: 10px;
         font-size: 20px;
+        text-align: center;
+        padding: 0px;
     }
     a .network {
         width: 25px;
@@ -691,18 +679,7 @@ a .network {
 }
 
 @media  screen and (min-width: 992px) {
-    #footer {
-        display: grid;
-        grid-template-areas: 
-        "website follow-us follow-us follow-us"
-        "website botton-networks botton-networks botton-networks" ;
-        grid-template-columns: 3fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
-        background-color: rgba(237, 227, 41, 0.992);
-        height: 120px;
-        align-content: space-between;
-    
-    }
+ 
     a .network {
         width: 36px;
     }
@@ -712,8 +689,10 @@ a .network {
         
     }
     .title-networks {
-        padding-top:5px;
+        margin-top: 10px;
         font-size: 25px;
+        text-align: center;
+        
     }
     .list-networks{
         padding-top: 15px;
