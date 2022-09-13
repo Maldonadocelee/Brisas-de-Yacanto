@@ -14,35 +14,42 @@
 </head>
 <body class="body-container">
     <!--Comienza etiqueta header-->
-    <header class="header">
-        <div class="logo">
-            <a href="index.html"  ><img class="imgHome" src="ImagenesCabañas/LOGO.png" alt="Logo Brisas de Yacanto" ></a>              
-        </div>
-        <nav class="nav__container">
-            <label for="menu" class="nav__label">
-                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-            </label>
+    <div class="container">
+        <header class="header-nav d-flex flex-wrap justify-content-around align-items-center">
+    
+            <nav class="navbar bg-light fixed-top navbar-expand-md">
+                <div class="container-fluid">
+                  <a class="navbar-brand logo" href="#"><img class="imgHome" src="ImagenesCabañas/LOGO.png" alt="Logo Brisas de Yacanto" ></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="Paginas/Tarifas.html">Tarifas</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Paginas/Cabañas.html">Cabañas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="Paginas/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Paginas/Ubicacion.html">Ubicación</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
             
-            <ul class="nav__menu">
-                <li class="nav__item">
-                    <a class="nav__link" href="Paginas/Tarifas.html">Tarifas</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="Paginas/Cabañas.html">Cabañas</a>
-                </li>
-                <li class="nav__item"> 
-                    <a class="nav__link" href="Paginas/Contacto.html">Contacto</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="Paginas/Ubicacion.html">Ubicación</a>
-                </li>
-            </ul>                  
-        </nav> 
-       
-                  
-    </header>
+
+        </header>
+    </div>
      <!--Finaliza etiqueta header-->
       <!--Comienza main-->
     <main id="main">
