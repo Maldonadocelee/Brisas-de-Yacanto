@@ -1,0 +1,96 @@
+footer{
+    .container-fluid {
+        .follow-us {
+            grid-area: follow-us;
+            align-items:center;
+        }
+        .row {
+            div{
+                h3 {
+                    .title-networks{
+                        margin: 5px 0px;
+                        text-align: center;
+                        padding-left: 30px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .row{
+            div{
+                p{
+                .text-website{
+                    font-size: 10px;
+                    text-align:start;
+                    padding-left: 15px;
+                    }
+                }
+            }
+            div{
+                ul{ 
+                    .list-networks {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        list-style-type: none;
+                    }
+                    li{
+                        .botton-networks{
+                            grid-area:  botton-networks;
+                         }
+                        a{
+                          .network {
+                            width: 16px;
+                            }     
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 575px){
+    .text-website {
+        font-size: 13px;
+        text-align:start;
+        padding-left: 12px;
+    }
+    .title-networks{
+        margin: 5px 0px;
+        text-align: center;
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    a .network {
+        width: 25px;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+
+    a .network {
+        width: 36px;
+    }
+    .text-website {
+        font-size: 18px;
+        text-align:start;
+        
+    }
+    .title-networks {
+        padding-top:5px;
+        font-size: 25px;
+    }
+    .list-networks{
+        padding-top: 15px;
+    }
+}
+@media  screen and (min-width: 1200px) {
+    .title-networks {
+        padding-top:5px;
+        font-size: 29px;
+        font-weight: bold ;
+    }
+    a .network {
+        width: 43px;
+    }
+}

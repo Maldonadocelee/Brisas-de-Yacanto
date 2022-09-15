@@ -10,64 +10,35 @@
     
 }
 
-/*comienza el header*/
-.header {
-
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    position: fixed;
-    z-index: 4; 
+/*comienza HEADER*/
+.navbar {
+    padding: 0px;
+}
+.container-fluid {
     background-color: #3B3B3B;
-    height: 90px;
-    width: 100%;
 }
 
-
+.navbar-toggler {
+    background-color: rgb(255, 254, 244);
+    margin-right: 25px;
+}
 .logo .imgHome {
     height: 90px;
     width: 100%;
+    padding-left: 25px;
 }
 
 .nav__menu {
     display: none;
 }
 
-.nav__menu .nav__item {
-list-style-type: none;
-margin: 25px;
-}
+@media screen and (min-width: 768px) {
 
-
-.nav__menu .nav__item .nav__link:hover {
-background-color: rgba(237, 227, 41, 0.992) ;
-}
-
-.nav__label svg {
-height: 50px;
-width: 50px;
-background-color: rgba(237, 227, 41, 0.992);
-}
-
-@media screen and (min-width: 992px) {
-.nav__menu{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-end;
-    margin-top: 0px;
-    
-}
-.nav__label svg {
+.navbar-toggler{
     display: none;
 }
-.logo .imgHome {
-    width: 100%;
-    margin-left: 45%;
-}
 
-.nav__menu .nav__item .nav__link {
+.nav-item .nav-link {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -79,54 +50,52 @@ background-color: rgba(237, 227, 41, 0.992);
     padding: 10px;
     border-radius: 10%;   
 }
-}
-@media screen and (min-width: 1200px) {
-.nav__menu .nav__item .nav__link {
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #dd7b2c;
-    margin: 0px 11px;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding: 10px;
-    border-radius: 10%;   
-}
+.nav-link:hover {
+    background-color: rgba(237, 227, 41, 0.992) ;
 }
 
-@media screen and (min-width: 1900px) {
-.header {
+}
 
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    position: fixed;
-    z-index: 4; 
-    background-color: #3B3B3B;
-    height: 130px;
-    width: 100%;
+@media screen and (min-width: 992px) {
+
+.nav__label svg {
+    display: none;
 }
 .logo .imgHome {
     width: 100%;
-    margin-left: 35%;
-    height: 100px;
+    margin-left: 45%;
 }
-.nav__menu .nav__item .nav__link {
+
+.nav-item .nav-link {
+    margin: 0px 11px;
+    font-size: 18px;
+    border-radius: 13%;   
+}
+}
+@media screen and (min-width: 1200px) {
+.nav-item .nav-link {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     color: #dd7b2c;
     margin: 0px 11px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 23px;
     letter-spacing: 2px;
     padding: 10px;
     border-radius: 10%;   
 }
+.nav-item {
+    padding-right: 40px;
 }
+}
+@media screen and (min-width: 1900px) {
+.nav-item {
+    padding-right: 90px;
+}
+}
+/*finaliza header*/
 
-/*comienza el main*/
 /*comienza main*/
 .main {
     padding-top: 110px;
@@ -191,6 +160,9 @@ background-color: rgba(237, 227, 41, 0.992);
 
 
 @media screen and (min-width:768px) {
+    .presentation p {
+        font-size: 18px;
+    }
     .gallery {
         display: grid;
         grid-template-columns: repeat(2,50%);
@@ -210,6 +182,9 @@ background-color: rgba(237, 227, 41, 0.992);
 } 
 
 @media screen and (min-width:1200px)  {
+    .presentation p {
+        font-size: 20px;
+    }
     .gallery {
         display: grid;
         grid-template-columns: repeat(2,35%);
@@ -238,7 +213,9 @@ background-color: rgba(237, 227, 41, 0.992);
         
 } 
 @media screen and (min-width:1900px) {
-    
+    .presentation p {
+        font-size: 25px;
+    }
     .gallery {
         display: grid;
         grid-template-columns: repeat(4,25%);
@@ -262,32 +239,35 @@ background-color: rgba(237, 227, 41, 0.992);
     }
 }
 
-/*comienza footer*/
-
+/*comienza el FOOTER*/
+/*
 #footer {
     display: grid;
     grid-template-areas: 
-    "website title-networks"
-    "website list-networks" ;
-    grid-template-columns: 3fr 2fr;
+    "website follow-us follow-us follow-us"
+    "website botton-networks botton-networks botton-networks" ;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
     background-color: rgba(237, 227, 41, 0.992);
     height: 75px;
     align-content: space-between;
-    width: 100%;
-}
+
+} */
 
 .follow-us {
-   
+    grid-area: follow-us;
     align-items:center;
 }
 .title-networks{
     margin: 5px 0px;
     text-align: center;
+    padding-left: 30px;
     font-size: 15px;
-    grid-area: title-networks;
 }
-
+.botton-networks{
+    grid-area:  botton-networks;
+    
+}
 a .network {
     width: 16px;
 }
@@ -296,8 +276,8 @@ a .network {
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
-    grid-area: list-networks;
 }
+
 
 .website-autor {
     grid-area: website;
@@ -318,6 +298,7 @@ a .network {
     .title-networks{
         margin: 5px 0px;
         text-align: center;
+        padding-left: 30px;
         font-size: 20px;
     }
     a .network {
@@ -326,65 +307,41 @@ a .network {
 }
 
 @media  screen and (min-width: 992px) {
-    #footer {
+  /*  #footer {
         display: grid;
         grid-template-areas: 
-        "website title-networks"
-        "website list-networks" ;
-        grid-template-columns: 3fr 2fr;
+        "website follow-us follow-us follow-us"
+        "website botton-networks botton-networks botton-networks" ;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 2fr;
         background-color: rgba(237, 227, 41, 0.992);
-        height: 85px;
-        align-content: space-between;
-        width: 100%;
-    }
-
-    .follow-us {
-   
-        align-items:flex-start;
-    }
-    .title-networks{
-        margin: 5px 0px;
-        text-align: center;
-        font-size: 30px;
-        grid-area: title-networks;
-    }
-    a .network {
-        width: 30px;
-    }
-    
-    
-}
-@media  screen and (min-width: 1200px) {
-    #footer {
-        display: grid;
-        grid-template-areas: 
-        "website title-networks"
-        "website list-networks" ;
-        grid-template-columns: 3fr 2fr;
-        grid-template-rows: 1fr 2fr;
-        background-color: rgba(237, 227, 41, 0.992);
-        height: 100px;
-        align-content: space-between;
-        width: 100%;
-    }
-
-    a .network {
-        width: 35px;
-    }
-    
-
-}
-@media  screen and (min-width: 1900px) {
-    footer {
-        margin-top: 60px;
-    }
-    #footer {
         height: 120px;
+        align-content: space-between;
+    
+    } */
+    a .network {
+        width: 36px;
+    }
+    .text-website {
+        font-size: 18px;
+        text-align:start;
         
     }
-    a .network {
-        width: 40px;
+    .title-networks {
+        padding-top:5px;
+        font-size: 25px;
     }
-    
+    .list-networks{
+        padding-top: 15px;
+    }
+}
+@media  screen and (min-width: 1200px) {
+    .title-networks {
+        padding-top:5px;
+        font-size: 29px;
+        font-weight: bold ;
+    }
+    a .network {
+        width: 43px;
+    }
 }
