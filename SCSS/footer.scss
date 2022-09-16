@@ -1,75 +1,60 @@
-footer{
-    .container-fluid {
-        .follow-us {
-            grid-area: follow-us;
-            align-items:center;
-        }
-        .row {
-            div{
-                h3 {
-                    .title-networks{
-                        margin: 5px 0px;
-                        text-align: center;
-                        padding-left: 30px;
-                        font-size: 15px;
-                    }
-                }
+.footer{
+    
+         .title-networks{
+            margin: 5px 0px;
+            text-align: center;
+            padding-left: 30px;
+            font-size: 15px;
             }
-        }
-        .row{
-            div{
-                p{
-                .text-website{
-                    font-size: 10px;
-                    text-align:start;
-                    padding-left: 15px;
-                    }
-                }
+              
+    
+        .text-website{
+            font-size: 10px;
+            text-align:start;
+            padding-left: 15px;
             }
-            div{
-                ul{ 
-                    .list-networks {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-evenly;
-                        list-style-type: none;
-                    }
-                    li{
-                        .botton-networks{
-                            grid-area:  botton-networks;
-                         }
-                        a{
-                          .network {
-                            width: 16px;
-                            }     
-                        }
-                    }
+            
+            
+        .list-networks {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                list-style-type: none;
+                .network {
+                    width: 16px;
                 }
+            
             }
-        }
-    }
+            
 }
 @media screen and (min-width: 575px){
-    .text-website {
-        font-size: 13px;
-        text-align:start;
-        padding-left: 12px;
+    .footer{
+        .text-website {
+            font-size: 13px;
+            text-align:start;
+            padding-left: 12px;
+        }
+        .title-networks{
+            margin: 5px 0px;
+            text-align: center;
+            padding-left: 30px;
+            font-size: 20px;
+        }
+        .list-networks {
+            
+            .network {
+                width: 26px;
+            }
+        
+        }
     }
-    .title-networks{
-        margin: 5px 0px;
-        text-align: center;
-        padding-left: 30px;
-        font-size: 20px;
-    }
-    a .network {
-        width: 25px;
-    }
-}
+    
+} 
 
 @media  screen and (min-width: 992px) {
-
-    a .network {
-        width: 36px;
+.footer {
+    .network {
+        width: 46px;
     }
     .text-website {
         font-size: 18px;
@@ -80,17 +65,31 @@ footer{
         padding-top:5px;
         font-size: 25px;
     }
-    .list-networks{
+    
+    .list-networks {
         padding-top: 15px;
+        .network {
+            width: 32px;
+        }
+    
     }
 }
+    
+}
 @media  screen and (min-width: 1200px) {
-    .title-networks {
-        padding-top:5px;
-        font-size: 29px;
-        font-weight: bold ;
+    .footer {
+        .title-networks {
+            padding-top:5px;
+            font-size: 29px;
+            font-weight: bold ;
+        }
+        .list-networks {
+            padding-top: 15px;
+            .network {
+                width: 36px;
+            }
+        
+        }
     }
-    a .network {
-        width: 43px;
-    }
+    
 }
