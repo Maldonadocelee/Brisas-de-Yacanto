@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,116 +7,12 @@
 .body-container {
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  background-color: #dd7b2c; }
-
-.main {
-  padding-top: 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: #dd7b2c; }
-  .main .title-contact {
-    text-align: center;
-    font-weight: bold;
-    font-size: 35px;
-    animation: fluido 30s ease-in-out infinite;
-    background: linear-gradient(-45deg, #fef60f, #ffffff, #f2e018, #fffedc);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 10px; }
-
-@keyframes fluido {
-  0% {
-    background-position: 0 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0 50%; } }
-  .main .subtitle {
-    color: #fffef4;
-    text-align: center;
-    padding: 20px; }
-  .main .attention {
-    font-style: italic;
-    padding: 25px;
-    text-align: center; }
-  .main .form {
-    border-style: ridge;
-    border-width: 5px;
-    background-color: rgba(237, 227, 41, 0.992);
-    margin: 5px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .main .form .input {
-      width: 100%;
-      height: 30px;
-      padding-left: 10px; }
-      .main .form .input .enviar {
-        width: 20%;
-        border-radius: 5%;
-        font-weight: bold; }
-    .main .form .textarea {
-      width: 100%; }
-  .main .numbers-phones {
-    border-style: ridge;
-    border-width: 5px;
-    border-color: #000000;
-    padding: 20px;
-    margin-bottom: 10px;
-    background-color: #fffef4; }
-
-@media screen and (min-width: 1200px) {
-  .title-contact {
-    font-size: 38px;
-    margin-top: 20px; } }
-
-@media screen and (min-width: 1900px) {
-  .title-contact {
-    font-size: 60px; }
-  .subtitle {
-    font-size: 40px; }
-  .attention {
-    padding: 30px;
-    text-align: center;
-    font-size: 25px; }
-  .numbers-phones {
-    border-style: ridge;
-    border-width: 5px;
-    border-color: #000000;
-    padding: 20px;
-    margin-bottom: 50px;
-    background-color: #fffef4;
-    font-size: 25px; }
-  .form {
-    border-style: ridge;
-    border-width: 5px;
-    background-color: rgba(237, 227, 41, 0.992);
-    margin: 5px;
-    padding: 5px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .input {
-    width: 100%;
-    font-size: 20px;
-    height: 40px;
-    padding-left: 20px; }
-  .enviar {
-    width: 20%;
-    padding: 0px; }
-  .text-area {
-    width: 100%;
-    font-size: 20px; } }
+  background-color: #78BC61; }
 
 header .navbar {
   padding: 0px; }
   header .navbar .container-fluid {
-    background-color: #3B3B3B; }
+    background-image: linear-gradient(60deg, #1f3b24, #86cf6e); }
     header .navbar .container-fluid .logo .imgHome {
       height: 90px;
       width: 100%;
@@ -174,24 +71,24 @@ header .nav__menu {
   .nav-item {
     padding-right: 90px; } }
 
-.footer .title-networks {
-  margin: 5px 0px;
-  text-align: center;
-  padding-left: 30px;
-  font-size: 15px; }
-
-.footer .text-website {
-  font-size: 10px;
-  text-align: start;
-  padding-left: 15px; }
-
-.footer .list-networks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style-type: none; }
-  .footer .list-networks .network {
-    width: 16px; }
+.container-fluid {
+  background-color: #86cf6e; }
+  .container-fluid .title-networks {
+    margin: 5px 0px;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 15px; }
+  .container-fluid .text-website {
+    font-size: 10px;
+    text-align: start;
+    padding-left: 15px; }
+  .container-fluid .list-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none; }
+    .container-fluid .list-networks .network {
+      width: 16px; }
 
 @media screen and (min-width: 575px) {
   .footer .text-website {
@@ -229,3 +126,318 @@ header .nav__menu {
     padding-top: 15px; }
     .footer .list-networks .network {
       width: 36px; } }
+
+.main {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #FCFAF9; }
+  .main .hero-title {
+    background-image: url(../ImagenesCabañas/Rincones-2.jpg);
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .main .hero-title .title-cabañas {
+      margin-top: 40px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+      color: #FCFAF9; }
+    .main .hero-title .title-page {
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+      animation: fluido 30s ease-in-out infinite;
+      background: linear-gradient(-45deg, #FCFAF9, #1f3b24, #FCFAF9, #86cf6e);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 10px; }
+
+@keyframes fluido {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+  .main .subtitle {
+    color: #1f3b24;
+    text-align: center;
+    padding: 20px; }
+  .main .attention {
+    font-style: italic;
+    padding: 25px;
+    text-align: center; }
+  .main .box-contact {
+    margin-top: 40px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: #1f3b24; }
+    .main .box-contact .form {
+      border-style: ridge;
+      border-width: 4px;
+      background-color: #86cf6e;
+      margin: 5px;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main .box-contact .form .input {
+        width: 100%;
+        height: 30px;
+        padding-left: 10px;
+        border-style: inset;
+        border-width: 1.5px;
+        border-color: #000000; }
+      .main .box-contact .form .enviar {
+        padding: 4px 15px;
+        border-radius: 5%;
+        font-weight: bold;
+        font-size: 13px; }
+      .main .box-contact .form .textarea {
+        width: 100%; }
+  .main .phones .numbers-phones {
+    border-style: ridge;
+    border-width: 3px;
+    border-color: #000000;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fffef4; }
+
+@media screen and (min-width: 990px) {
+  .main .hero-title .title-page {
+    font-size: 48px;
+    margin-top: 20px; }
+  .main .box-contact {
+    padding: 45px; }
+    .main .box-contact .form {
+      border-style: ridge;
+      border-width: 5px;
+      margin: 5px;
+      padding: 20px 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main .box-contact .form .input {
+        width: 100%;
+        font-size: 20px;
+        height: 40px;
+        padding-left: 20px; }
+      .main .box-contact .form .enviar {
+        font-size: 18px; } }
+
+@media screen and (min-width: 1900px) {
+  .main .hero-title .title-page {
+    font-size: 68px;
+    margin-top: 20px; }
+  .main .subtitle {
+    font-size: 40px; }
+  .main .attention {
+    padding: 30px;
+    text-align: center;
+    font-size: 25px; }
+  .main .box-contact {
+    padding: 65px; }
+    .main .box-contact .form {
+      border-style: ridge;
+      border-width: 5px;
+      margin: 5px;
+      padding: 25px 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main .box-contact .form .input {
+        width: 100%;
+        font-size: 20px;
+        height: 40px;
+        padding-left: 20px; }
+      .main .box-contact .form .enviar {
+        font-size: 25px; }
+  .main .numbers-phones {
+    border-style: ridge;
+    border-width: 5px;
+    border-color: #000000;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #fffef4;
+    font-size: 25px; } }
+
+.main {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #FCFAF9; }
+  .main .hero-title {
+    background-image: url(../ImagenesCabañas/Rincones-2.jpg);
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .main .hero-title .title-cabañas {
+      margin-top: 40px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+      color: #FCFAF9; }
+    .main .hero-title .title-page {
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+      animation: fluido 30s ease-in-out infinite;
+      background: linear-gradient(-45deg, #FCFAF9, #1f3b24, #FCFAF9, #86cf6e);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 10px; }
+
+@keyframes fluido {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+  .main .conteiner-rate-promotions {
+    width: 100%;
+    margin: 50px 0px; }
+    .main .conteiner-rate-promotions .validity {
+      text-align: center;
+      font-weight: bold; }
+  .main .conteiner-promotions {
+    padding: 25px 15px;
+    background-image: linear-gradient(60deg, #1f3b24, #86cf6e);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    .main .conteiner-promotions .box-promotions {
+      background-color: #d5d8dc;
+      position: absolute;
+      z-index: 2;
+      margin: 30px 20px 20px 20px;
+      padding: 0px 20px; }
+      .main .conteiner-promotions .box-promotions .subtitle {
+        color: #FCFAF9;
+        font-size: xx-large;
+        padding: 15px;
+        text-align: center; }
+      .main .conteiner-promotions .box-promotions .list-promotion {
+        list-style-image: url(../ImagenesCabañas/icons.svg);
+        padding: 0px 20px;
+        font-size: 37px; }
+        .main .conteiner-promotions .box-promotions .list-promotion .text-promotion {
+          font-size: 16px; }
+  .main .conteiner-rate .subtitle {
+    color: #1f3b24;
+    font-size: xx-large;
+    padding: 15px;
+    text-align: center; }
+  .main .conteiner-rate .price-cabañas {
+    margin: 10px;
+    background-color: #FCFAF9;
+    border-style: double;
+    border-width: 20px;
+    border-color: #1f3b24;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 18px; }
+    .main .conteiner-rate .price-cabañas .title-cabañas {
+      text-align: center;
+      font-style: bold;
+      font-size: 25px; }
+    .main .conteiner-rate .price-cabañas .subtitle-cabañas {
+      text-align: center;
+      font-size: 21px; }
+    .main .conteiner-rate .price-cabañas .img-article {
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      align-items: center; }
+    .main .conteiner-rate .price-cabañas .list-price {
+      list-style-type: none;
+      padding: 15px 0px;
+      margin: 0px;
+      text-align: center; }
+
+@media screen and (min-width: 576px) {
+  .main .conteiner-promotions .box-promotions {
+    height: 375px;
+    border-style: inset;
+    border-color: rgba(91, 87, 87, 0.616);
+    border-width: 6px;
+    margin: 50px 20px 20px 20px;
+    padding: 0px 20px; }
+  .main .conteiner-rate {
+    background-image: url(../ImagenesCabañas/Rincones-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 110px 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main .conteiner-rate .subtitle {
+      font-size: 40px; }
+    .main .conteiner-rate .price-cabañas {
+      margin: 10px;
+      padding: 20px 55px;
+      font-size: 18px;
+      width: 490px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main .conteiner-rate .price-cabañas .title-cabañas {
+        text-align: center;
+        font-style: bold;
+        font-size: 30px; }
+      .main .conteiner-rate .price-cabañas .subtitle-cabañas {
+        text-align: center;
+        font-size: 25px; }
+      .main .conteiner-rate .price-cabañas .img-article {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%; }
+      .main .conteiner-rate .price-cabañas .list-price {
+        list-style-type: none;
+        padding: 15px 0px;
+        margin: 0px;
+        text-align: center;
+        font-size: 20px; } }
+
+@media screen and (min-width: 768px) {
+  .main #subtitle-articles {
+    grid-area: subtitle-articles;
+    text-align: center; }
+  .main .conteiner-rate {
+    grid-area: conteiner-rate; }
+  .main .conteiner-rate {
+    display: grid;
+    grid-template-areas: "subtitle-articles subtitle-articles" "conteiner-rate conteiner-rate";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 65px 3fr;
+    grid-column-gap: 20px;
+    padding-bottom: 20px;
+    justify-items: center; } }

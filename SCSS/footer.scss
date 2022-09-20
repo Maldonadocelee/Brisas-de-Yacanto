@@ -1,6 +1,7 @@
-.footer{
-    
-         .title-networks{
+.container-fluid {
+         
+        background-color: $color-ligth-green;
+        .title-networks{
             margin: 5px 0px;
             text-align: center;
             padding-left: 30px;
@@ -29,6 +30,7 @@
 }
 @media screen and (min-width: 575px){
     .footer{
+        
         .text-website {
             font-size: 13px;
             text-align:start;
@@ -53,6 +55,7 @@
 
 @media  screen and (min-width: 992px) {
 .footer {
+   
     .network {
         width: 46px;
     }
@@ -78,6 +81,7 @@
 }
 @media  screen and (min-width: 1200px) {
     .footer {
+        
         .title-networks {
             padding-top:5px;
             font-size: 29px;
