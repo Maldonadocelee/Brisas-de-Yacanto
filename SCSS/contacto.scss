@@ -6,47 +6,6 @@
     width: 100%;
     background-color: $color-ligth;
 
-        .hero-title  {
-            background-image: url(../ImagenesCabañas/Rincones-2.jpg);
-            width: 100%;
-            height: 350px;
-            background-position: center;
-            background-repeat: none;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .title-cabañas {
-                
-                margin-top: 40px;
-                text-align: center;
-                font-weight: bold; 
-                font-size: 15px ;
-                color:$color-font-h1;
-            }
-            .title-page {
-                
-                text-align: center;
-                font-weight: bold; 
-                font-size: 35px ; 
-                animation: fluido 30s ease-in-out infinite;
-                background: linear-gradient(-45deg, $color-ligth, $color-dark-green , $color-ligth, $color-ligth-green);
-                background-size: 300%;
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                padding: 10px;
-            }
-            @keyframes fluido {
-                0% { background-position: 0 50% }
-                50% { background-position: 100% 50% }
-                100% { background-position: 0 50% }
-            }
-        }
-        
-    
-
-    
             .subtitle {
                     color: $color-dark-green;
                     text-align: center;
@@ -114,13 +73,7 @@
 
 @media screen and (min-width: 990px) {
    .main{
-    .hero-title {
-        
-        .title-page {
-            font-size: 48px;
-            margin-top: 20px;
-        }
-    }
+    
     .box-contact {
         padding: 45px;
         .form {
@@ -149,13 +102,7 @@
 
 @media screen and  (min-width:1900px) {
     .main{
-        .hero-title {
-            
-            .title-page {
-                font-size: 68px;
-                margin-top: 20px;
-            }
-        }
+        
         .subtitle {
             font-size: 40px;
         }

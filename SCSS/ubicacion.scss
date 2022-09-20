@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .subtitle {
+            padding: 5px;
+            margin: 20px 0PX;
+            font-size: 18px ;
+            text-align: center;
+        }
+    }
+    .box-maps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 185px;
+        width: 90%;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
+        cursor: pointer;
+        .maps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    }
+    
+    .address{
+        color: rgb(17, 16, 15);
+        font-size: 13px ;
+        margin: 30px;
+        text-align: center;
+    }
+    .button-disponibility {
+        margin: 20px 0px 40px 0px ;
+    }
+}

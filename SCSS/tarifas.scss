@@ -6,44 +6,7 @@
     width: 100%;
     background-color: $color-ligth;
 
-    .hero-title  {
-        background-image: url(../ImagenesCabañas/Rincones-2.jpg);
-        width: 100%;
-        height: 350px;
-        background-position: center;
-        background-repeat: none;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .title-cabañas {
-            
-            margin-top: 40px;
-            text-align: center;
-            font-weight: bold; 
-            font-size: 15px ;
-            color:$color-font-h1;
-        }
-        .title-page {
-            
-            text-align: center;
-            font-weight: bold; 
-            font-size: 35px ; 
-            animation: fluido 30s ease-in-out infinite;
-            background: linear-gradient(-45deg, $color-ligth, $color-dark-green , $color-ligth, $color-ligth-green);
-            background-size: 300%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            padding: 10px;
-        }
-        @keyframes fluido {
-            0% { background-position: 0 50% }
-            50% { background-position: 100% 50% }
-            100% { background-position: 0 50% }
-        }
-    }
-
+    
     .conteiner-rate-promotions {
         width: 100%;
         margin: 50px 0px;
@@ -67,15 +30,17 @@
             background-color: rgb(213, 216, 220);
             position: absolute;
             z-index: 2;
-            margin: 30px 20px 20px 20px;
-            padding: 0px 20px;
+            margin: 30px 25px 25px 20px;
+            padding: 0px 10px;
+            border-radius: 8%;
             
 
             .subtitle {
-                color: $color-ligth;
-                font-size: xx-large;
-                padding: 15px;
+                color: $color-dark-green;
+                font-size: 25px;
+                padding: 15px 10px 5px 10px;
                 text-align: center;
+                margin: 0px;
             }
             .list-promotion {
                 list-style-image: url(../ImagenesCabañas/icons.svg);
@@ -94,9 +59,19 @@
     }
     .conteiner-rate {
        
-       
+            margin-top: 80px;
+            background-image: url(../ImagenesCabañas/Rincones-3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 110px 2px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .subtitle {
-                color: $color-dark-green ;
+                color: $color-ligth ;
                 font-size: xx-large;
                 padding: 15px;
                 text-align: center;
@@ -155,16 +130,7 @@
             }
         }
         .conteiner-rate {
-            background-image: url(../ImagenesCabañas/Rincones-3.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            margin: 110px 2px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            
             
             .subtitle {
                 font-size: 40px;
@@ -203,11 +169,19 @@
     }
 }
 
-@media screen and (min-width:768px) {
+
+@media screen and (min-width:1200px){
     .main {
+        .validity {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
         #subtitle-articles {
             grid-area: subtitle-articles;
             text-align: center;
+            font-size: 45px;
+            margin-top: 30px;
         }
         .conteiner-rate {
             grid-area: conteiner-rate;
@@ -218,14 +192,42 @@
                 "subtitle-articles subtitle-articles"
                 "conteiner-rate conteiner-rate";
             grid-template-columns: 2fr 2fr;
-            grid-template-rows: 65px 3fr;
+            grid-template-rows: 100px 3fr;
             grid-column-gap: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 80px;
             justify-items: center;
             
             }
-    }
-    
-    
-    
-} 
+            .conteiner-promotions {
+                
+                
+                .box-promotions{
+                    background-color: rgb(213, 216, 220);
+                    position: absolute;
+                    z-index: 2;
+                    margin: 30px 25px 25px 20px;
+                    padding: 10px 35px 45px 35px;
+                    border-radius: 8%;
+                    
+        
+                    .subtitle {
+                        color: $color-dark-green;
+                        font-size: 40px;
+                        padding: 15px 10px 5px 10px;
+                        
+                    }
+                    .list-promotion {
+                        
+                        font-size: 40px;
+        
+                        .text-promotion {
+                            font-size: 22px;
+        
+                        }
+        
+                        
+                    }
+                }
+    }}
+
+}
