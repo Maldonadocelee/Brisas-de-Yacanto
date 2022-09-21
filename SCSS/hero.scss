@@ -21,8 +21,9 @@
         text-align: center;
         font-weight: bold; 
         font-size: 32px ; 
+        font-family: $font-secondary;
         animation: fluido 30s ease-in-out infinite;
-        background: linear-gradient(-45deg, $color-ligth, $color-dark-green , $color-ligth, $color-ligth-green);
+        background: linear-gradient(-75deg, $color-ligth, $color-ligth-green );
         background-size: 300%;
         -webkit-background-clip: text;
         background-clip: text;
