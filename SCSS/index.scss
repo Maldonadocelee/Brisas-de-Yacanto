@@ -20,14 +20,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: $color-dark-green;
+            
             
             
             
             .hero__title  {
-                font-size: 20px;
+                font-size: 23px;
                 text-align: center;
                 color: $color-dark-green;
+                font-weight: bold;
                 
             }
             .hero__subtitle {
@@ -37,7 +38,7 @@
             }
             .text-hero {
                 color: $color-dark-green;
-                opacity: 0.3;
+                opacity: 0.7;
                 text-align:center;
                 padding: 5px 5px ;
                 font-size: 15px;
@@ -53,6 +54,7 @@
             padding: 50px 5px 50px 5px;
             color: $color-dark-green;
             font-weight: bold;
+            font-size: 20px ;
             
         }
         .presentation-us{
@@ -68,24 +70,32 @@
                 background-size: cover;
                 width: 100%;
                 
+                
+                
            
             .img-about-us {
                 margin: 10px 0px ;
                 width: 100%;
-                padding: 0px 40px;
+                padding: 10px 40px;
+                border: 10px 20px 10px 20px;
+                border-style: ridge;
+                border-color: $color-ligth;
+                
+                
+                
                 
             
             }
             .presentation{
                 
-                background-color: $color-ligth;
-                opacity: 0.6;
+                background-color: rgba(134, 207, 110,0.2);
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                color: black;
+                color: $color-ligth;
                 text-align: justify;
                 padding: 15px;
+            
 
                 .hello {
                     margin: 8px 3px 0px 3px;
@@ -110,6 +120,7 @@
             color: $color-dark-green;
             font-weight: bold;
             margin: 0px;
+            font-size: 20px ;
             
         }
         .presentation-activitis {
@@ -131,12 +142,14 @@
             .video-location {
                 height: 100%;
                 width: 100%;
+                padding-top: 20px;
             
             }
             .presentation-location {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                
                 .activitis-title {
                     text-align: center;
                     margin: 20px;
@@ -145,12 +158,12 @@
                 }
                 .presentation{
                 
-                    background-color: $color-ligth;
-                    opacity: 0.6;
+                    background-color: rgba(134, 207, 110,0.2);
+                    
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-                    color: black;
+                    color: $color-ligth;
                     text-align: justify;
                     padding: 15px;
                 }
@@ -159,9 +172,64 @@
     }
     
     
-    
+    .reviews-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+        .subtitles{
+            text-align: center;
+            padding: 50px 5px 50px 5px;
+            color: $color-dark-green;
+            font-weight: bold;
+            margin: 0px;
+            font-size: 20px ; }
+            
+                .card-reviews {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgba(134, 207, 110,0.6);
+                    margin: 10px;
+                    padding: 15px;
+                    border-radius: 10%;
+                    .card-icon {
+                        display: block;
+                        justify-items: left;
+                        width: 38px;
+                        padding: 5px;
+                    }
+                    .card-text {
+                        text-align: justify;
+                        font-size: 14px;
+                        
+                    }
+                    .card-firma {
+                        display: grid;
+                        grid-template-areas: 
+                        "card-photo card-username";
+                        grid-template-columns: 0.5fr 1.5fr;
+                        grid-template-rows: 1fr;
+                        align-items: center;
+                        justify-content: center;
+                        .card-username {
+                            grid-area: card-username;
+                            font-size: 14px;
+                            margin: 0px;
+                        }
+                        .card-photo {
+                            grid-area: card-photo;
+                            width: 60%;
+                        
+                        }
+                    }
+
+
+                }
+            
+
+        }
+    }
 
 
     
 
-}

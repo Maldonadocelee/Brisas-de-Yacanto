@@ -204,18 +204,18 @@ header .nav__menu {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: #1f3b24; }
+    align-items: center; }
     .main .hero .hero__title {
-      font-size: 20px;
+      font-size: 23px;
       text-align: center;
-      color: #1f3b24; }
+      color: #1f3b24;
+      font-weight: bold; }
     .main .hero .hero__subtitle {
       text-align: center;
       font-size: 17px; }
     .main .hero .text-hero {
       color: #1f3b24;
-      opacity: 0.3;
+      opacity: 0.7;
       text-align: center;
       padding: 5px 5px;
       font-size: 15px; }
@@ -227,7 +227,8 @@ header .nav__menu {
       text-align: center;
       padding: 50px 5px 50px 5px;
       color: #1f3b24;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 20px; }
     .main .about-us .presentation-us {
       display: flex;
       flex-direction: column;
@@ -243,14 +244,16 @@ header .nav__menu {
       .main .about-us .presentation-us .img-about-us {
         margin: 10px 0px;
         width: 100%;
-        padding: 0px 40px; }
+        padding: 10px 40px;
+        border: 10px 20px 10px 20px;
+        border-style: ridge;
+        border-color: #FCFAF9; }
       .main .about-us .presentation-us .presentation {
-        background-color: #FCFAF9;
-        opacity: 0.6;
+        background-color: rgba(134, 207, 110, 0.2);
         width: 100%;
         display: flex;
         flex-direction: column;
-        color: black;
+        color: #FCFAF9;
         text-align: justify;
         padding: 15px; }
         .main .about-us .presentation-us .presentation .hello {
@@ -267,7 +270,8 @@ header .nav__menu {
     padding: 50px 5px 50px 5px;
     color: #1f3b24;
     font-weight: bold;
-    margin: 0px; }
+    margin: 0px;
+    font-size: 20px; }
   .main .about-location .presentation-activitis {
     display: flex;
     flex-direction: column;
@@ -284,7 +288,8 @@ header .nav__menu {
     justify-content: space-evenly; }
     .main .about-location .presentation-activitis .video-location {
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      padding-top: 20px; }
     .main .about-location .presentation-activitis .presentation-location {
       display: flex;
       flex-direction: column;
@@ -295,14 +300,54 @@ header .nav__menu {
         padding-top: 10px;
         color: #FCFAF9; }
       .main .about-location .presentation-activitis .presentation-location .presentation {
-        background-color: #FCFAF9;
-        opacity: 0.6;
+        background-color: rgba(134, 207, 110, 0.2);
         width: 100%;
         display: flex;
         flex-direction: column;
-        color: black;
+        color: #FCFAF9;
         text-align: justify;
         padding: 15px; }
+  .main .reviews-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px; }
+    .main .reviews-section .subtitles {
+      text-align: center;
+      padding: 50px 5px 50px 5px;
+      color: #1f3b24;
+      font-weight: bold;
+      margin: 0px;
+      font-size: 20px; }
+    .main .reviews-section .card-reviews {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(134, 207, 110, 0.6);
+      margin: 10px;
+      padding: 15px;
+      border-radius: 10%; }
+      .main .reviews-section .card-reviews .card-icon {
+        display: block;
+        justify-items: left;
+        width: 38px;
+        padding: 5px; }
+      .main .reviews-section .card-reviews .card-text {
+        text-align: justify;
+        font-size: 14px; }
+      .main .reviews-section .card-reviews .card-firma {
+        display: grid;
+        grid-template-areas: "card-photo card-username";
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center; }
+        .main .reviews-section .card-reviews .card-firma .card-username {
+          grid-area: card-username;
+          font-size: 14px;
+          margin: 0px; }
+        .main .reviews-section .card-reviews .card-firma .card-photo {
+          grid-area: card-photo;
+          width: 60%; }
 
 .main {
   padding-top: 110px;
