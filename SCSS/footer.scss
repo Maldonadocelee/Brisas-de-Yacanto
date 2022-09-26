@@ -1,11 +1,14 @@
 .container-fluid {
          
-        background-color: $color-ligth-green;
+    background-image: linear-gradient(40deg,$color-dark-green, $color-ligth-green) ;
         .title-networks{
             margin: 5px 0px;
             text-align: center;
             padding-left: 30px;
             font-size: 15px;
+            color: $color-dark-green;
+            font-weight: bold;
+            
             }
               
     
@@ -13,6 +16,7 @@
             font-size: 10px;
             text-align:start;
             padding-left: 15px;
+            color: $color-ligth;
             }
             
             
@@ -23,6 +27,7 @@
                 list-style-type: none;
                 .network {
                     width: 16px;
+                    color: $color-dark-green;
                 }
             
             }

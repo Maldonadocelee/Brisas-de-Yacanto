@@ -6,24 +6,24 @@
     width: 100%;
     background-color: $color-ligth;
 
-            .subtitle {
-                    color: $color-dark-green;
-                    text-align: center;
-                    padding: 20px;
-                }
-
-            
-                .attention{
-                        font-style: italic;
-                        padding: 25px;
-                        text-align: center;
-                }
-                
+            .form-box {
                 .box-contact {
                     margin-top: 40px;
                     border-style:groove;
                     border-width: 3px;
                     border-color: $color-dark-green;
+                    .subtitle {
+                        color: $color-dark-green;
+                        text-align: center;
+                        padding: 15px;
+                    }
+    
+                
+                    .attention{
+                            font-style: italic;
+                            padding: 20px;
+                            text-align: center;
+                    }
                     .form{
                         border-style: ridge;
                         border-width: 4px;
@@ -53,6 +53,9 @@
                         }
                 }
             }
+                
+                
+            }
                 .phones {
                 .numbers-phones {
                     border-style: ridge;
@@ -74,50 +77,14 @@
 @media screen and (min-width: 990px) {
    .main{
     
-    .box-contact {
-        padding: 45px;
-        .form {
-            border-style: ridge;
-            border-width: 5px;
-            margin: 5px;
-            padding: 20px 35px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;  
-            .input {
-                width: 100%;
-                font-size: 20px;
-                height: 40px;
-                padding-left: 20px;
-                
-            }
-            .enviar {
-                font-size: 18px;
-            }
-        }
-   }
-   } 
-   
-}
-
-@media screen and  (min-width:1900px) {
-    .main{
-        
-        .subtitle {
-            font-size: 40px;
-        }
-        .attention {
-            padding: 30px;
-            text-align: center;
-            font-size: 25px;
-        }
+    .form-box {
         .box-contact {
-            padding: 65px;
+            padding: 45px;
             .form {
                 border-style: ridge;
                 border-width: 5px;
                 margin: 5px;
-                padding: 25px 45px;
+                padding: 20px 35px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;  
@@ -129,23 +96,78 @@
                     
                 }
                 .enviar {
-                    
-                    font-size: 25px;
+                    font-size: 18px;
                 }
             }
-           }
+       }
+    }
+
+    
+   } 
+   
+}
+
+@media screen and  (min-width:1200px) {
+    .main{
+        .form-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .box-contact {
+                padding: 40px 60px ;
+                width: 70%;
+                .subtitle {
+                    font-size: 30px;
+                    padding: 15px 0px;
+                }
+                .attention {
+                    padding: 10px 20px;
+                    text-align: center;
+                    font-size: 19px;
+                }
+                .form {
+                    border-style: ridge;
+                    border-width: 5px;
+                    margin: 5px;
+                    padding: 25px 45px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;  
+                    .input {
+                        width: 100%;
+                        font-size: 20px;
+                        height: 40px;
+                        padding-left: 20px;
+                        
+                    }
+                    .enviar {
+                        
+                        font-size: 20px;
+                    }
+                }
+               }
+        }
         
         
         
-        .numbers-phones {
-            border-style: ridge;
-            border-width: 5px;
-            border-color: #000000;
-            padding: 20px;
-            margin-bottom: 50px;
-            background-color: rgb(255, 254, 244) ;
-            font-size: 25px;
-        } 
+        .phones {
+            padding: 55px 0px 30px 0px;
+            .subtitle {
+                text-align: center;
+            }
+            .numbers-phones {
+                border-style: ridge;
+                border-width: 5px;
+                border-color: #000000;
+                padding: 20px;
+                margin-bottom: 50px;
+                background-color: rgb(255, 254, 244) ;
+                font-size: 25px;
+                text-align: center;
+            } 
+        }
+        
+        
     } 
     
 

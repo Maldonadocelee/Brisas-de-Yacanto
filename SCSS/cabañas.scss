@@ -53,6 +53,12 @@
                 padding: 20px;
             }
         }
+        .gallery-horizontal {
+            display: none;
+        }
+        .gallery-horizontal-2 {
+            display: none;
+        }
     }
 
 }
@@ -91,11 +97,11 @@
         .section-cabañas {
             .subtitle {
                 margin: 20px;
-                font-size:28px;
+                font-size:30px;
                 
             }
             .presentation {
-                height: 420px;
+                height: 520px;
                 .text-presentation {
                     width: 60%;
                     font-size: 18px;
@@ -108,13 +114,43 @@
             .carousel {
                 margin: 20px 20px 85px 20px;
                 width: 60%;
+                display: none;
     
                 .slide {
                     margin: 10px;
                     
                     padding: 20px;
                 }
-            
-        
-    }
+
+            }
+            .gallery-horizontal {
+                    
+                display: grid;
+                grid-template-columns: repeat(2,35%);
+                justify-content: center;
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+                padding: 30px;
+                align-items: center;
+                .img-cabañas img {
+                    width: 80%;
+                    margin: 5px 10px ;
+                    
+                }
+                
+            }
+            .gallery-horizontal-2 {
+                display: grid;
+                grid-template-columns: repeat(2,35%);
+                justify-content: center;
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+                padding: 30px;
+                align-items: center;
+                .img-cabañas img {
+                    width: 95%;
+                    margin: 5px 10px ;
+                    
+                }
+            }
         }}}

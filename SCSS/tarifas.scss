@@ -89,32 +89,40 @@
                 
                 justify-content: center;
                 font-size: 18px;
-                .title-cabañas {
-                    text-align: center;
-                    font-style: bold;
-                    font-size: 25px;
+                .box-price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .title-cabañas {
+                        text-align: center;
+                        font-style: bold;
+                        font-size: 25px;
+                    }
+                    .subtitle-cabañas {
+                        text-align: center;
+                        font-size: 21px;
+                    }
+                    .img-article {
+                        width: 175px;
+                        height: 175px;
+                        border-radius: 50%;
+                        margin-left: 16px;
+                        
+                    }
+                    .list-price {
+                        list-style-type: none;
+                        padding: 15px 0px;
+                        margin: 0px;
+                        text-align: center;
+                    }
+                    .button-gallery {
+                        background-color: $color-ligth-green;
+                        padding: 9px 12px;
+                        font-size: 15px;
+                        
+                    }
                 }
-                .subtitle-cabañas {
-                    text-align: center;
-                    font-size: 21px;
-                }
-                .img-article {
-                    width: 175px;
-                    height: 175px;
-                    border-radius: 50%;
-                    margin-left: 16px;
-                    
-                }
-                .list-price {
-                    list-style-type: none;
-                    padding: 15px 0px;
-                    margin: 0px;
-                    text-align: center;
-                }
-                .button-gallery {
-                    background-color: $color-ligth-green;
-                    
-                }
+                
             }
         
         

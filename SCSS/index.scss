@@ -13,6 +13,10 @@
             width: 100%;
             
         }
+        .carousel-control-prev-icon {
+            color:chartreuse;
+
+        }
     }
         .hero {
             width: 80%;
@@ -49,6 +53,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         .subtitles   {
             text-align: center;
             padding: 50px 5px 50px 5px;
@@ -64,23 +69,24 @@
             overflow:hidden;
             padding: 25px 5px;
             background-image: url(../ImagenesCabañas/Rincones-1.jpg);
-                background-position: center ;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 100%;
+            background-position: center ;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
                 
                 
                 
            
             .img-about-us {
                 margin: 10px 0px ;
-                width: 100%;
+                
                 padding: 10px 40px;
                 border: 10px 20px 10px 20px;
                 border-style: ridge;
                 border-color: $color-ligth;
                 
+                max-width: 350px;
                 
                 
                 
@@ -95,6 +101,7 @@
                 color: $color-ligth;
                 text-align: justify;
                 padding: 15px;
+                width: 90%;
             
 
                 .hello {
@@ -140,8 +147,8 @@
             justify-content: space-evenly;
           
             .video-location {
-                height: 100%;
-                width: 100%;
+                height: 400px;
+                width: 85%;
                 padding-top: 20px;
             
             }
@@ -160,7 +167,7 @@
                 
                     background-color: rgba(134, 207, 110,0.2);
                     
-                    width: 100%;
+                    width: 90%;
                     display: flex;
                     flex-direction: column;
                     color: $color-ligth;
@@ -176,7 +183,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 60px;
+        padding-bottom: 60px; 
         .subtitles{
             text-align: center;
             padding: 50px 5px 50px 5px;
@@ -189,9 +196,10 @@
                     display: flex;
                     flex-direction: column;
                     background-color: rgba(134, 207, 110,0.6);
-                    margin: 10px;
+                    margin: 10px 0px;
                     padding: 15px;
                     border-radius: 10%;
+                    width: 270px;
                     .card-icon {
                         display: block;
                         justify-items: left;
@@ -229,6 +237,260 @@
 
         }
     }
+    @media screen and (min-width:576px) {
+        .main {
+            .about-us {
+                .presentation-us {
+                    .presentation {
+                        width: 75%;
+                    }
+                }
+                
+            }
+            .about-location {
+                .presentation-activitis {
+                  
+                    .video-location {
+                        height: 400px;
+                        width: 75%;
+                        padding-top: 20px;
+                    }
+                    .presentation-location {
+
+                        .presentation{
+                            width: 400px;
+                          
+                        }
+                    }
+                }
+            }
+         
+        }
+    }
+   
+    @media screen and (min-width:992px) {
+        .main {
+            .about-us {
+                .presentation-us {
+                    .presentation {
+                        width: 65%;
+                    }
+                }
+                
+            }
+            .about-location {
+                width: 100%;
+                .presentation-activitis {
+                    width: 100%;
+                    .video-location {
+                        height: 400px;
+                        width: 600px;
+                        padding-top: 20px;
+                    }
+
+                }
+            }
+         
+        }
+    }
+    @media screen and (min-width:1200px) {
+        .main {
+            .carousel-hero {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .carousel  {
+                    border: ridge 1.5px  $color-dark-green;
+                    z-index: 1;
+                    width: 80%;
+                    
+                }
+                .carousel-control-prev-icon {
+                    color:chartreuse;
+                    width: 80%;
+                }
+
+
+            }
+
+            .hero {
+                width: 80%;
+                margin-top: 35px;
+                .hero__title  {
+                    font-size: 33px;
+                    text-align: center;
+                    color: $color-dark-green;
+                    font-weight: bold;
+                    
+                }
+                .hero__subtitle {
+                    text-align: center;
+                    font-size: 28px;
+                    
+                }
+                .text-hero {
+                    color: $color-dark-green;
+                    opacity: 0.7;
+                    text-align:center;
+                    padding: 5px 5px ;
+                    font-size: 29px;
+                }
+            }
+                .about-us {
+                    width: 100%;
+                    
+                    .subtitles   {
+                       
+                        padding: 50px 5px 50px 5px;
+                        
+                        font-size: 28px ;
+                        
+                    }
+                    .presentation-us{    
+                       width: 80%;
+                        .img-about-us {
+                            margin: 10px 0px ;
+                            
+                            padding: 15px 45px;
+                            border: 10px 20px 10px 20px;
+                            max-width: 480px;
+                            
+                            
+                            
+                        
+                        }
+                        .presentation{
+                            
+                            background-color: rgba(134, 207, 110,0.2);
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            color: $color-ligth;
+                            text-align: justify;
+                            padding: 15px;
+                            width: 80%;
+                            font-size: 22px;
+                            
+            
+                            .hello {
+                                margin: 8px 3px 0px 3px;
+                                font-weight: bold;
+                                text-align: start;
+                                font-size: 19px;
+                            }
+                            .us {
+                                align-items: flex-end;
+                                text-align: end;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            
+                .about-location {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .subtitles   {
+                        padding: 50px 5px 50px 5px;
+                        font-weight: bold;
+                        margin: 0px;
+                        font-size: 28px ;
+                        
+                    }
+                    .presentation-activitis {
+                        padding: 25px 5px;
+                        background-image: url(../ImagenesCabañas/Rincones-1.jpg);
+                            background-position: center ;
+                            background-attachment: fixed;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        width: 80%;
+                           
+                        
+                        display: flex;
+                        flex-direction: column;
+                      
+                        .video-location {
+                            
+                           width: 50%;
+                            padding-top: 20px;
+                        
+                        }
+                        .presentation-location {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            
+                            .activitis-title {
+                                font-size: 32px;
+                            }
+                            .presentation{
+                            
+                                background-color: rgba(134, 207, 110,0.2);
+                                
+                                width: 80%;
+                                display: flex;
+                                flex-direction: column;
+                                color: $color-ligth;
+                                text-align: justify;
+                                padding: 15px;
+                                font-size: 22px;
+
+                            }
+                        }
+                    }
+                }
+                
+                
+                .reviews-section {
+                    .subtitles{
+                        text-align: center;
+                        padding: 50px 5px 50px 5px;
+                        color: $color-dark-green;
+                        font-weight: bold;
+                        margin: 0px;
+                        font-size: 28px ; }
+                        
+                            .card-reviews {
+                                margin: 10px 0px;
+                                padding: 15px;
+                                border-radius: 10%;
+                                width: 270px;
+                                
+                                .card-icon {
+                                    display: block;
+                                    justify-items: left;
+                                    width: 48px;
+                                    padding: 5px;
+                                }
+                                .card-text {
+                                    text-align: justify;
+                                    font-size: 16px;
+                                    
+                                }
+                                .card-firma {
+                                    .card-username {
+                                        grid-area: card-username;
+                                        font-size: 16px;
+                                        margin: 0px;
+                                    }
+                                    .card-photo {
+                                        grid-area: card-photo;
+                                        width: 65%;
+                                    
+                                    }
+                                }
+            
+            
+                            }
+                        
+            
+                    }
+            }
+        }
+    
 
 
     
