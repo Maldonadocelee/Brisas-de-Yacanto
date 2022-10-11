@@ -12,7 +12,9 @@ header {
             box-shadow: 10px 10px 25px  rgba(0,0,0,0.5);
             border-radius: 5px;
             
-            .logo .imgHome {
+            .logo {
+                background-color: aliceblue;
+            } .imgHome {
                 height: 95px;
                 width: 100%;
                 padding-left: 25px;
